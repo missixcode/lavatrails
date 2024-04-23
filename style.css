@@ -1,0 +1,666 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+  font-family: "indivisible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.dark-text {
+  color: #231F20;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+h1 {
+  font-family: noka, sans-serif;
+  font-weight: 800;
+}
+
+h2 {
+  color: white;
+  font-size: 1.75rem;
+}
+
+h3 {
+  color: #DE7B51;
+  font-size: 1.5rem;
+}
+
+h4 {
+  color: #DE7B51;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+/*Web Nav*/
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 25px;
+    background-color: white;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(35,31,32,.6);
+}
+
+#brand {
+    font-family: noka, sans-serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+}
+
+#brand a {
+    color: #DE7B51;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a {
+    color: #231F20;
+    font-family: "myriad-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#shop-web {
+    border: 1px solid #DE7B51;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+#shop-web-a {
+    color: #DE7B51;
+}
+
+/*Mobile Nav*/
+
+#top-nav {
+  height: 25px;
+  background-color: #DE7B51;
+  display: none;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: #6C6365;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    height: 225px;
+    width: 100%;
+    background-color: #E6DFD7;
+  }
+  
+  .mobile-menu li {
+    margin-top: 10px;
+  }
+
+  .mobile-menu a {
+    color: #231F20;
+    font-family: noka, sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
+  #shop-mobile {
+    border: 2px solid #DE7B51;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+#shop-mobile-a {
+    color: #DE7B51;
+}
+  
+  @media only screen and (max-width: 600px) {
+    #top-nav {
+        display: block;
+    }
+
+    header nav {
+      display: none;
+    }
+  
+    #hamburger-icon {
+      display: block;
+    }
+  }
+
+
+/*Main Page - Main*/
+
+#image-holder {
+  max-width: 1440px;
+}
+
+img {
+  width: 100%;
+  max-height: 600px;
+}
+
+.orange-container {
+  height: 400px;
+  width: 1008px;
+  background-color: #DE7B51;
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+  flex-direction: column;
+}
+
+.hero-text {
+  color: #E6DFD7;
+  justify-self: center;
+  margin-top: none;
+}
+
+.button-container {
+  height: 110px;
+  padding: 35px 0px;
+}
+
+.button-schedule {
+    color: #231F20;
+    font-family: noka, sans-serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+    border-radius: 5px;
+    padding: 15px 30px;
+    background-color: #E6DFD7;
+}
+
+.button-schedule:hover {
+  background-color: #6C6365;
+    transition: 0.3s;
+    color: white;
+}
+
+.main-paragraph {
+  padding-top: 15px;
+  width: 85%;
+  height: 400px;
+  text-align: center;
+  align-self: center;
+}
+
+/*Main Page - Kilauea*/
+
+.hike-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 1008px;
+}
+
+.kilauea-image {
+  height: 80px;
+  width: 59.3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kilauea-header {
+  height: 40px;
+  padding-top: 10px;
+}
+
+.hike-text {
+  height: 300px;
+  padding-top: 15px;
+  width: 80%;
+  text-align: left;
+  align-self: center;
+}
+
+.button-container-hikes {
+  height: 150px;
+  padding-top: 45px;
+}
+
+.button-hikes {
+    color: white;
+    font-family: noka, sans-serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+    border-radius: 5px;
+    padding: 15px 30px;
+    background-color: #DE7B51;
+}
+
+.button-hikes:hover {
+  background-color: #6C6365;
+    transition: 0.3s;
+    color: white;
+}
+
+
+/*Main Page - Thurston*/
+
+.thurston-header {
+  height: 55px;
+  padding-top: 25px;
+}
+
+/*Main Page - Media Only*/
+
+  @media only screen and (max-width: 600px) {
+    .orange-container {
+      height: 570px;
+      width: 85%;
+      background-color: #DE7B51;
+      margin-top: -25px;
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      margin-top: none;
+    }
+
+    .hero-text {
+      color: #E6DFD7;
+      padding-top: 25px;
+      font-size: 1rem;
+    }
+    
+    .button-container {
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .button-schedule {
+        color: #231F20;
+        font-family: noka, sans-serif;
+        font-weight: 800;
+        font-size: 1.75rem;
+        border-radius: 5px;
+        padding: 15px 25px;
+        background-color: #E6DFD7;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    .main-paragraph {
+      padding-top: 10px;
+      width: 69%;
+      height: 400px;
+      text-align: left;
+      align-self: center;
+    }
+
+
+    .hike-container {
+      height: 800px;
+      width: 85%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hike-text {
+      width: 82%;
+    }
+    
+  }
+
+
+/*Schedule Page - Main Paragraph*/
+
+.schedule-header {
+  height: 177px;
+  padding-top: 80px;
+}
+
+.schedule-paragraph {
+  width: 80%;
+  max-width: 1000px;
+  text-align: left;
+  align-self: center;
+  height: 200px;
+}
+
+.decoration {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  width: 90%;
+}
+
+.line-one {
+  width: 38%;
+  border: 1px solid #6C6365;
+  height: 0px;
+  align-self: center;
+}
+
+.line-two {
+  width: 38%;
+  border: 1px solid #6C6365;
+  height: 0px;
+  align-self: center;
+}
+
+.small-volcano-container {
+  padding-top: 25px;
+}
+
+.small-volcano-icon {
+  height: 60px;
+  width: 44.47px;
+  align-self: center;
+}
+
+/*Schedule Page - Links*/
+
+.hike-link-container {
+  height: 76px;
+}
+
+.hike-link {
+  color: #DE7B51;
+    font-family: noka, sans-serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+}
+
+/*Schedule Page - Inputs*/
+
+.input-container {
+  text-align: left;
+  width: 85%;
+  height: 460px;
+  max-width: 1000px;
+  font-weight: 500;
+  padding-top: 30px;
+}
+
+.input-bar {
+  width: 100%;
+  height: 33px;
+}
+
+.submit-button {
+  height: 30px;
+  width: 91px;
+  background-color: #DE7B51;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.selection-bar {
+  width: 100%;
+  height: 33px;
+}
+
+.hidden-option {
+  display: none;
+}
+
+
+/*Footer - Beautiful Views*/
+
+.views-container {
+  height: 800px;
+  width: 360px;
+  padding-top: 120px;
+}
+
+.box-one {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  padding-top: 40px;
+}
+
+.sunset-image {
+  height: 160px;
+  width: 106.83px;
+}
+
+.lavaflowing-image {
+  height: 160px;
+  width: 239.5px;
+}
+
+.box-two {
+  display: flex;
+  height: 254px;
+  padding-top: 14px;
+}
+
+.box-three {
+  display: flex;
+  justify-content: space-between;
+  height: 144px;
+  padding-top: 14px;
+}
+
+.tourist-image {
+  height: 130px;
+  width: 230.11px;
+}
+
+.sunsetocean-image {
+  height: 130px;
+  width: 116px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #4F4C4D;
+}
+
+.footercontainer {
+    width: 100%;
+    padding: 50px 30px 20px;
+    height: 390px;
+}
+
+.footer-logo {
+  font-family: noka, sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo a {
+  color: #DE7B51;
+}
+
+.footer-phone {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 500;
+  height: 80px;
+  padding-top: 30px;
+}
+
+.footer-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-button {
+  color: #4F4C4D;
+    font-family: noka, sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 15px 20px;
+    background-color: #E6DFD7;
+}
+
+.footer-button:hover {
+  color: #E6DFD7;
+  background-color: #231F20;
+}
+
+.footer-space {
+  height: 30px;
+}
+
+.socialicons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #DE7B51;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialicons a i{
+    font-size: 2em;
+    color: #E6DFD7;
+    opacity: 0.9;
+}
+
+.socialicons a:hover{
+    background-color: #E6DFD7;
+    transition: 0.5s;
+}
+
+.socialicons a:hover i{
+    color: #DE7B51;
+    transition: 0.5s;
+}
+
+
+.footerbottom {
+    background-color: #231F20;
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+}
+
+.footerbottom p{
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.designer{
+    opacity: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+
+
+
+/**/
+
+
+
+/*
+<div class="main-container">
+        <img src="images/hero-394.jpg" class="main-hero"
+            srcset="images/hero-394.jpg 394w,
+            images/hero-600.jpg 600w,
+            images/hero-1200.jpg 1200w,
+            images/hero-1920.jpg 1920w"
+            sizes="(min-width: 1200px) 80vw, (min-width: 390px) 100vw, (min-width: )">
+        </div>
+
+
+#top-nav {
+  height: 35px;
+  background-color: #DE7B51;
+  display: none;
+}

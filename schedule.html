@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Schedule Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/jec5jwl.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <div id="top-nav"></div>
+       <header>
+        <div id="brand"><a href="homepage.html">LAVA<span style="color:#6C6365">TRAILS</span></a></div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#">Trails</a></li>
+                <li><a href="#">About Us</a></li>
+                <li id="shop-web"><a href="schedule.html" id="shop-web-a">Schedule</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="#">TRAILS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li id="shop-mobile"><a href="schedule.html" id="shop-mobile-a">SCHEDULE</a></li>
+            </ul>
+          </div>
+       </header>
+
+       <main>
+        <div class="schedule-header">
+            <h4>SCHEDULE YOUR<br>TOUR-GUIDED HIKE</h4>
+        </div>
+        <div class="schedule-paragraph"><p class="dark-text">Undiscovered gems and world-class outdoor adventures await you in the Hawaii Volcanoes National Park. Schedule your tour-guided hike today to begin planning the unforgettable adventure you have been longing for.</p></div>
+        <div class="decoration">
+            <div class="line-one"></div>
+            <div class="small-volcano-container"><img src="images/kilaueavolcano-08.png" class="small-volcano-icon"></div>
+            <div class="line-two"></div>
+        </div>
+        <div class="hike-link-container"><a href="" class="hike-link">KEANAKĀKO’I HIKE</a><br>Beginner - 1.5 miles</div>
+        <div class="hike-link-container"><a href="" class="hike-link">CHAIN OF CRATERS</a><br>Beginner - 1.8 miles</div>
+        <div class="hike-link-container"><a href="" class="hike-link">KĪLAUEA HIKE</a><br>Intermediate - 2.5 miles</div>
+        <div class="hike-link-container"><a href="" class="hike-link">LAVA TUBE HIKE</a><br>Intermediate - 2.5 miles</div>
+        <div class="hike-link-container"><a href="" class="hike-link">HALEMA'UMA'U</a><br>Advanced - 3.2 miles</div>
+        <div class="hike-link-container"><a href="" class="hike-link">SULPHUR BANK HIKE</a><br>Advanced - 4.2 miles</div>
+
+        <div class="input-container">
+        <form action="">
+            <label for="fname">First Name*</label><br>
+            <input type="text" id="fname" name="fname" class="input-bar"><br><br>
+            <label for="fname">Last Name*</label><br>
+            <input type="text" id="fname" name="fname" class="input-bar"><br><br>
+            <label for="fname">Email*</label><br>
+            <input type="text" id="fname" name="fname" class="input-bar"><br><br>
+            <label for="trail">Hike/Trail*</label><br>
+            <select id="trail" name="trail" class="selection-bar">
+                <option value="blank" class="hidden-option"></option>
+                <option value="keanakāko‘i">Keanakāko‘I</option>
+                <option value="chainofcraters">Chain of Craters</option>
+                <option value="kilauea">Kīlauea</option>
+                <option value="lavatube">Lava Tube</option>
+                <option value="halema'uma'u">Halema'uma'u</option>
+                <option value="sulphur">Sulphur Bank</option>
+            </select><br><br>
+            <label for="payment">Payment Method*</label><br>
+            <select id="payment" name="payment" class="selection-bar">
+                <option value="blank" class="hidden-option"></option>
+                <option value="debit">Debit/Credit</option>
+                <option value="paypal">Paypal</option>
+                <option value="applepay">Apple Pay</option>
+                <option value="googlepay">Google Pay</option>
+            </select><br><br>
+            <input type="submit" value="Submit" class="submit-button">
+          </form> 
+        </div>
+           
+            <div class="views-container">
+                <h3>BEAUTIFUL VIEWS<br><span style="color:#231F20">#LAVATRAILS</span></h3>
+                <div class="box-one"><img src="images/sunsetimage.jpg" class="sunset-image"><img src="images/lavaflowing.jpg" class="lavaflowing-image"></div>
+                <div class="box-two"><img src="images/lavagoinginocean.jpg" class="lavaocean-image"></div>
+                <div class="box-three"><img src="images/touristlavaocean.webp"  class="tourist-image"><img src="images/sunsetocean.jpg" class="sunsetocean-image"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footercontainer">
+                <div class="footer-logo"><a href="homepage.html">LAVA<span style="color:#E6DFD7">TRAILS</span></a></div>
+                <div class="footer-phone"><p>1-800-888-LAVA</p></div>
+                <div class="footer-button-container">
+                    <a href="schedule.html" class="footer-button">SCHEDULE NOW</a>
+                    </div>
+                <div class="footer-space"></div>
+              <div class="socialicons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footerbottom">
+              <p class="footerp">Copyright &copy;2023; Designed by <span class="designer">LAVATRAILS</span></p>
+            </div>
+            </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
